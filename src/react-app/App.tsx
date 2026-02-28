@@ -1,4 +1,3 @@
-import ContatoPage from "./pages/Contato";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/react-app/hooks/useCart";
 import HomePage from "@/react-app/pages/Home";
@@ -20,7 +19,6 @@ export default function App() {
           <Route path="/brecho" element={<BrechoPage />} />
           <Route path="/brecho/:id" element={<ProductDetailPage />} />
           <Route path="/carrinho" element={<CartPage />} />
-          <Route path="/contato" element={<ContatoPage />} />
         </Routes>
       </Router>
     </CartProvider>
