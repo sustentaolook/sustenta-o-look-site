@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Sustenta o Look - Paleta feminina, delicada e consciente */
+    --background: 40 20% 98%; /* Off-white quente */
+    --foreground: 0 0% 10%; /* Preto suave */
+    --card: 40 15% 96%;
+    --card-foreground: 0 0% 10%;
+    --popover: 40 20% 98%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 75 25% 35%; /* Verde oliva */
+    --primary-foreground: 40 20% 98%;
+    --secondary: 25 20% 88%; /* Nude */
+    --secondary-foreground: 0 0% 15%;
+    --muted: 30 15% 93%;
+    --muted-foreground: 25 10% 40%;
+    --accent: 25 25% 82%; /* Nude mais escuro */
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 10% 88%;
+    --input: 30 10% 88%;
+    --ring: 75 25% 35%;
+    --radius: 0.25rem;
+    --olive: 75 25% 35%;
+    --nude: 25 20% 85%;
+    --cream: 40 30% 95%;
+    --chart-1: 75 25% 45%;
+    --chart-2: 75 20% 55%;
+    --chart-3: 25 25% 70%;
+    --chart-4: 25 20% 60%;
+    --chart-5: 30 15% 50%;
+    --sidebar: 40 15% 96%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 75 25% 35%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 25 20% 88%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 30 10% 88%;
+    --sidebar-ring: 75 25% 35%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 40 20% 95%;
+    --card: 0 0% 12%;
+    --card-foreground: 40 20% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 40 20% 95%;
+    --primary: 75 30% 45%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 25 15% 20%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 30 10% 60%;
+    --accent: 25 20% 25%;
+    --accent-foreground: 40 20% 95%;
+    --destructive: 0 65% 45%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 75 30% 45%;
+    --olive: 75 30% 45%;
+    --nude: 25 15% 30%;
+    --cream: 30 10% 18%;
+    --chart-1: 75 30% 50%;
+    --chart-2: 75 25% 60%;
+    --chart-3: 25 20% 50%;
+    --chart-4: 25 15% 45%;
+    --chart-5: 30 10% 40%;
+    --sidebar: 0 0% 10%;
+    --sidebar-foreground: 40 20% 95%;
+    --sidebar-primary: 75 30% 45%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 25 15% 20%;
+    --sidebar-accent-foreground: 40 20% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 75 30% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Jost", system-ui, sans-serif;
+    font-weight: 300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 400;
+  }
+
+  button:not([disabled]),
+  [role="button"]:not([disabled]) {
+    cursor: pointer;
+  }
+}
