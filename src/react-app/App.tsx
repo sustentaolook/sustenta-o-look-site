@@ -1,3 +1,4 @@
+import SobreNos from "./pages/SobreNos";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import { CartProvider } from "@/react-app/hooks/useCart";
 import HomePage from "@/react-app/pages/Home";
@@ -12,6 +13,7 @@ export default function App() {
     <CartProvider>
       <Router>
         <Routes>
+          <Route path="/sobre" element={<SobreNos />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/sobre-nos" element={<SobreNosPage />} />
           <Route path="/autorais" element={<AutoraisPage />} />
