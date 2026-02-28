@@ -43,20 +43,11 @@ export default function Footer() {
               >
                 Brechó
               </Link>
-              <Link
-                to="/contato"
-                className="text-sm text-background/70 hover:text-background transition-colors"
-              >
-                Contato
-              </Link>
             </nav>
           </div>
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="text-sm uppercase tracking-widest text-background/50">
-              Contato
-            </h4>
             <div className="space-y-2">
               <a
                 href="https://instagram.com/sustentaolook"
