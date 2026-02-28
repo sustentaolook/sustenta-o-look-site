@@ -68,7 +68,7 @@ export default function Footer() {
                 <span>@sustentaolook</span>
               </a>
               <p className="text-sm text-background/70">
-                contato@sustentaolook.com
+                sustentaloja@gmail.com
               </p>
             </div>
           </div>
