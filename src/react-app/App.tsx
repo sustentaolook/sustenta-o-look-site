@@ -1,5 +1,5 @@
 import ContatoPage from "./pages/Contato";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { CartProvider } from "@/react-app/hooks/useCart";
 import HomePage from "@/react-app/pages/Home";
 import AutoraisPage from "@/react-app/pages/Autorais";
