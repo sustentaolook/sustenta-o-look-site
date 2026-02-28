@@ -13,7 +13,7 @@ export default function App() {
     <CartProvider>
       <Router>
         <Routes>
-          <Route path="/sobre" element={<SobreNos />} />
+          <Route path="/sobre" element={<SobreNosPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/autorais" element={<AutoraisPage />} />
           <Route path="/autorais/:id" element={<ProductDetailPage />} />
